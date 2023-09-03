@@ -12,8 +12,8 @@ const Details = ({ linkValue }) => {
         }
         return false;
     });
-    console.log("Data1 : ", data1);
     let myData = data1;
+    // console.log("Data1 : ", data1);
 
     return (
         <>
@@ -27,11 +27,12 @@ const Details = ({ linkValue }) => {
                                 <h2 >{e1.word}</h2>
                                 <div key={e1.phonetics[i]} className='audios'>
                                     {
-                                        e1.phonetics.map((e2) => (
+                                        e1.phonetics &&
+                                         e1.phonetics.map((e2) => (
                                             <>
                                                 <div className='audio' key={e2.sourceUrl}>
                                                     <p>{e2.text}</p>
-                                                    <audio src={e2.audio} controls></audio>
+                                                    {e2.audio && <audio src={e2.audio} controls></audio>}
                                                 </div>
                                             </>
                                         ))

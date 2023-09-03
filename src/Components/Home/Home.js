@@ -40,7 +40,7 @@ const Home = ()=>{
                     <button onClick={handleClick}>Search</button>
                 </div>
                 {
-                    loading && <span class="loader"></span>
+                    loading && <span className="loader"></span>
                 }
                {
                 !loading &&
@@ -50,23 +50,26 @@ const Home = ()=>{
                     myData && 
                     myData.map((e1,i)=>(
                         <div key={i} className='eachData'>
-                                <h2 >{e1.word}</h2>
-                            <div key={e1.phonetics[i]} className='audios'>
+                                <h2 key={e1.word}>{e1.word}</h2>
+                                <div id={"a"+i+10} className='audios'>
                                 {
                                     e1.phonetics.map((e2)=>(
                                         <>
                                         <div className='audio' key={e2.sourceUrl}>
-                                            <p>{e2.text}</p>
-                                            <audio src={e2.audio} controls></audio>
+                                            <p key={e2.text}>{e2.text}</p>
+                                            {
+                                                e2.audio &&
+                                            <audio key={e2.audio} src={e2.audio} controls></audio>
+                                            }
                                         </div>
                                         </>
                                     ))
                                 }
-                            </div>
-                                <p>{e1.phonetic}</p>
+                               </div>
+                                <p key={e1.phonetic}>{e1.phonetic}</p>
                                 {
                                     e1.meanings[0] &&
-                                        <div className='noun'>
+                                        <div  className='noun'>
                                             <h3>{e1.meanings[0].partOfSpeech}</h3>
                                             {
 
