@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/F4-Module-Test----History-Page/static/css/main.d63b7042.css",
+    "main.js": "/F4-Module-Test----History-Page/static/js/main.7bac5855.js",
+    "index.html": "/F4-Module-Test----History-Page/index.html",
+    "main.d63b7042.css.map": "/F4-Module-Test----History-Page/static/css/main.d63b7042.css.map",
+    "main.7bac5855.js.map": "/F4-Module-Test----History-Page/static/js/main.7bac5855.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d63b7042.css",
+    "static/js/main.7bac5855.js"
+  ]
+}
