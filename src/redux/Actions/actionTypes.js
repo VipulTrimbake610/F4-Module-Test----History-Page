@@ -1,0 +1,11 @@
+
+
+// Home Data
+export const DICTIONARY_LOADING = 'DICTIONARY_LOADING';
+export const DICTIONARY_SUCCESS = 'DICTIONARY_SUCCESS';
+export const DICTIONARY_ERROR = 'DICTIONARY_ERROR';
+
+// History Data
+export const HISTORY_DATA = 'HISTORY_DATA'
+export const HISTORY_UPDATE = 'HISTORY_UPDATE';
+

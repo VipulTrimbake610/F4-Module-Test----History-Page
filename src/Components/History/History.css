@@ -1,0 +1,15 @@
+
+.searchHistory{
+    /* background-color: white; */
+    background-color: white;
+    min-height: 100px;
+    height: auto;
+    padding: 20px;
+}
+
+.historyLinks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font-size: 20px;
+}
