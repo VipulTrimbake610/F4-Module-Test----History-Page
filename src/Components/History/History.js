@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const History =({setLinkValue})=>{
     let x = useSelector(info=>info);
     let data = x.history;
-    console.log(data);
+    // console.log(data);
 
     function handleClick(e){
         setLinkValue(e.target.innerText);

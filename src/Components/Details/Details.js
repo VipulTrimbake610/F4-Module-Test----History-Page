@@ -2,10 +2,10 @@ import { useSelector } from 'react-redux';
 import './Details.css'
 
 const Details = ({ linkValue }) => {
-    console.log(linkValue);
+    // console.log(linkValue);
 
     let data = useSelector(info => info);
-    console.log(data.history);
+    // console.log(data.history);
     let data1 = data.history.find((e) => {
         if (e[0].word === linkValue) {
             return true;

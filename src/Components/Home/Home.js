@@ -14,7 +14,7 @@ const Home = ()=>{
     
     let {loading,data} = x.dictionary;
     let myData = data.data;
-    console.log(x);
+    // console.log(x);
     
     
 
